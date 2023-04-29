@@ -24,7 +24,7 @@ const Service: NextPage<{ query: string }> = ({ query }) => {
             width={"100%"}
             className={loading ? `hidden` : `border-none`}
             height="100%"
-            src={`/uv/${query}`}
+            src={`/~/uv/${query}`}
           ></iframe>
         </div>
       </div>

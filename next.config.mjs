@@ -27,6 +27,10 @@ const config = {
   //       source: '/bare/',
   //       destination: 'https://tomp.app/',
   //     },
+  //     {
+  //       source: '/bare/:path*',
+  //       destination: 'https://tomp.app/:path*/',
+  //     },
   //   ]
   // },
 };

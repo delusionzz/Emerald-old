@@ -55,8 +55,6 @@ const Home: NextPage = () => {
           />
         </div>
       </main>
-      <Script src="/uv/uv.bundle.js" strategy="lazyOnload" />
-      <Script src="/uv/uv.config.js" strategy="lazyOnload" />
     </>
   );
 };

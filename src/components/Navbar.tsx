@@ -135,7 +135,7 @@ const Navbar = () => {
                           onClick={() => {
                             // eslint-disable-next-line
                             router.push({
-                              pathname: `/service`,
+                              pathname: "/service",
                               query: { q: xor.encode(app.source) },
                             });
                           }}
