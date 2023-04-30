@@ -21,17 +21,17 @@ const config = {
   trailingSlash: true,
   // ! REMOVE THE COMMENTS BELOW IF YOU ARE NOT USING A REVERSE-PROXY FOR BARE !
 
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: '/bare/',
-  //       destination: 'https://tomp.app/',
-  //     },
-  //     {
-  //       source: '/bare/:path*',
-  //       destination: 'https://tomp.app/:path*/',
-  //     },
-  //   ]
-  // },
+  async rewrites() {
+    return [
+      {
+        source: '/bare/',
+        destination: 'https://tomp.app/',
+      },
+      {
+        source: '/bare/:path*',
+        destination: 'https://tomp.app/:path*/',
+      },
+    ]
+  },
 };
 export default config;
