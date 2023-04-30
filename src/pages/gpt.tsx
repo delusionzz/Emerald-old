@@ -91,11 +91,6 @@ const Gpt = () => {
     <>
       <Head>
         <title>Emerald GPT</title>
-        <Script
-          async
-          data-cfasync="false"
-          src="//broadsheetspikesnick.com/d61cfab1aa5829b5619cb48e7fd02089/invoke.js"
-        ></Script>
       </Head>
       <div className="flex h-screen w-full flex-col items-center justify-center pb-10">
         <div className="text- absolute right-5 top-5">
