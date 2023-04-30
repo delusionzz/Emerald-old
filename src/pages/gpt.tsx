@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState, useEffect } from "react";
 import type { ChatCompletionRequestMessage } from "openai";
 import axios from "axios";

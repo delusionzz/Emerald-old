@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { Configuration, OpenAIApi } from "openai";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Ratelimit } from "@upstash/ratelimit";
