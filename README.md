@@ -33,12 +33,38 @@ cd Emerald && npm i
     },
 ```
 
-- either keep or replace the destination with your bare server
-
 - Build and Start proxy
 
 ```bash
 npm run build && npm run start
+```
+
+### Making your Caddy config
+
+- create a file called `Caddyfile`
+
+```bash
+touch Caddyfile
+```
+
+- Make the actual config
+
+```bash
+nano Caddyfile
+```
+
+- input the following config
+
+```
+YOUR_DOMAIN {
+    reverse_proxy localhost:3000
+    handle /bare/* {
+        # remove this if your bare prefix is /bare/
+        uri strip_prefix /bare
+        reverse_proxy YOUR_BARE_SERVER
+    }
+}
+
 ```
 
 ## Using Docker?
