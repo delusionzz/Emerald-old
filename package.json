@@ -9,14 +9,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@upstash/ratelimit": "^0.4.2",
-    "@upstash/redis": "^1.20.4",
     "axios": "^1.4.0",
     "framer-motion": "^10.12.4",
-    "gpt-3-encoder": "^1.1.4",
-    "ip": "^1.1.8",
     "next": "^13.2.4",
-    "openai": "^3.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
