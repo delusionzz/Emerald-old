@@ -19,7 +19,7 @@ const config = {
     defaultLocale: "en",
   },
   trailingSlash: true,
-  // ! REMOVE THE COMMENTS BELOW IF YOU ARE NOT USING A REVERSE-PROXY FOR BARE !
+  // ! COMMENT THE LINES BELOW IF YOUR USING A REVERSE PROXY FOR BARE !
 
   async rewrites() {
     return [
