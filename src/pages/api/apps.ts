@@ -39,13 +39,13 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       icon: "/images/Mathway.png",
     },
     {
-      title: "Goku.to - Watch movies and shows for free",
-      source: "https://goku.to/",
+      title: "Goku.sx - Watch movies and shows for free",
+      source: "https://goku.sx/",
       icon: "/images/goku.png",
     },
     {
-      title: "Zoro.to - watch anime for free",
-      source: "https://zoro.to",
+      title: "Aniwatch.to - watch anime for free",
+      source: "https://aniwatch.to",
       icon: "/images/zoro.jpg",
     },
     {

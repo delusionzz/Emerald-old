@@ -3,6 +3,7 @@ import Image from "next/image";
 import { IoIosApps } from "react-icons/io";
 import { FaDiscord } from "react-icons/fa";
 import { SiOpenai } from "react-icons/si";
+import { Gamepad2 } from "lucide-react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { xor } from "./xor";
@@ -43,10 +44,13 @@ const Navbar = () => {
                 Discord
               </button>
             </Link>
-            <Link href={"/gpt"}>
-              <button className="flex items-center justify-center rounded-md  border-[1px]  border-[#c656e7] px-3 py-2 text-center text-lg text-white transition-all ease-linear hover:bg-[#c656e7]">
-                <SiOpenai className=" mr-2 mt-[.5px] w-5" />
-                GPT
+            <Link href={"/"}>
+              <button
+                disabled // border-[#c656e7] hover:bg-[#c656e7]
+                className="flex items-center justify-center rounded-md border-[1px] border-zinc-700 px-3 py-2 text-center text-lg text-zinc-500 transition-all ease-linear "
+              >
+                <Gamepad2 className=" mr-2 mt-[.5px] w-5" />
+                Games
               </button>
             </Link>
             <button
@@ -68,12 +72,12 @@ const Navbar = () => {
                 open: {
                   opacity: 1,
                   transition: {
-                    duration: 0.1,
-                  },
+                    duration: 0.1
+                  }
                 },
                 closed: {
-                  opacity: 0,
-                },
+                  opacity: 0
+                }
               }}
               exit="closed"
               initial="closed"
@@ -88,12 +92,12 @@ const Navbar = () => {
                   width: "50rem",
                   transition: {
                     delayChildren: 0.4,
-                    staggerChildren: 0.04,
-                  },
+                    staggerChildren: 0.04
+                  }
                 },
                 closed: {
-                  width: "0rem",
-                },
+                  width: "0rem"
+                }
               }}
               exit="closed"
               initial="closed"
@@ -104,12 +108,12 @@ const Navbar = () => {
                 variants={{
                   open: {
                     y: 0,
-                    opacity: 1,
+                    opacity: 1
                   },
                   closed: {
                     y: -40,
-                    opacity: 0,
-                  },
+                    opacity: 0
+                  }
                 }}
               >
                 Emerald Apps
@@ -123,12 +127,12 @@ const Navbar = () => {
                           variants={{
                             open: {
                               y: 0,
-                              opacity: 1,
+                              opacity: 1
                             },
                             closed: {
                               y: -40,
-                              opacity: 0,
-                            },
+                              opacity: 0
+                            }
                           }}
                           className="group z-10 my-2 drop-shadow-lg"
                           // eslint-disable-next-line
@@ -136,7 +140,7 @@ const Navbar = () => {
                             // eslint-disable-next-line
                             router.push({
                               pathname: "/service",
-                              query: { q: xor.encode(app.source) },
+                              query: { q: xor.encode(app.source) }
                             });
                           }}
                         >

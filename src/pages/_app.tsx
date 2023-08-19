@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import { useSw } from "@/components";
 const MyApp: AppType = ({ Component, pageProps }) => {
-  useSw("/sw.js", "/~/uv/");
+  useSw("/sw.js", "/~/");
   return (
     <>
       <AnimatePresence mode="wait">
